@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7918E56922AFDA410065576A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7918E56822AFDA410065576A /* AppDelegate.swift */; };
+		7918E56B22AFDA410065576A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7918E56A22AFDA410065576A /* Assets.xcassets */; };
+		7918E56E22AFDA410065576A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7918E56C22AFDA410065576A /* MainMenu.xib */; };
+		7918E57A22AFDA420065576A /* Trojan_XTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7918E57922AFDA420065576A /* Trojan_XTests.swift */; };
+		7918E58522AFDA420065576A /* Trojan_XUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7918E58422AFDA420065576A /* Trojan_XUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7918E57622AFDA420065576A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7918E55D22AFDA410065576A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7918E56422AFDA410065576A;
+			remoteInfo = "Trojan-X";
+		};
+		7918E58122AFDA420065576A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7918E55D22AFDA410065576A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7918E56422AFDA410065576A;
+			remoteInfo = "Trojan-X";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7918E56522AFDA410065576A /* Trojan-X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trojan-X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7918E56822AFDA410065576A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7918E56A22AFDA410065576A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7918E56D22AFDA410065576A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7918E56F22AFDA420065576A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7918E57022AFDA420065576A /* Trojan_X.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trojan_X.entitlements; sourceTree = "<group>"; };
+		7918E57522AFDA420065576A /* Trojan-XTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trojan-XTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7918E57922AFDA420065576A /* Trojan_XTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trojan_XTests.swift; sourceTree = "<group>"; };
+		7918E57B22AFDA420065576A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7918E58022AFDA420065576A /* Trojan-XUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trojan-XUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7918E58422AFDA420065576A /* Trojan_XUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trojan_XUITests.swift; sourceTree = "<group>"; };
+		7918E58622AFDA420065576A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7918E56222AFDA410065576A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7918E57222AFDA420065576A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7918E57D22AFDA420065576A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7918E55C22AFDA410065576A = {
+			isa = PBXGroup;
+			children = (
+				7918E56722AFDA410065576A /* Trojan-X */,
+				7918E57822AFDA420065576A /* Trojan-XTests */,
+				7918E58322AFDA420065576A /* Trojan-XUITests */,
+				7918E56622AFDA410065576A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7918E56622AFDA410065576A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7918E56522AFDA410065576A /* Trojan-X.app */,
+				7918E57522AFDA420065576A /* Trojan-XTests.xctest */,
+				7918E58022AFDA420065576A /* Trojan-XUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7918E56722AFDA410065576A /* Trojan-X */ = {
+			isa = PBXGroup;
+			children = (
+				7918E56822AFDA410065576A /* AppDelegate.swift */,
+				7918E56A22AFDA410065576A /* Assets.xcassets */,
+				7918E56C22AFDA410065576A /* MainMenu.xib */,
+				7918E56F22AFDA420065576A /* Info.plist */,
+				7918E57022AFDA420065576A /* Trojan_X.entitlements */,
+			);
+			path = "Trojan-X";
+			sourceTree = "<group>";
+		};
+		7918E57822AFDA420065576A /* Trojan-XTests */ = {
+			isa = PBXGroup;
+			children = (
+				7918E57922AFDA420065576A /* Trojan_XTests.swift */,
+				7918E57B22AFDA420065576A /* Info.plist */,
+			);
+			path = "Trojan-XTests";
+			sourceTree = "<group>";
+		};
+		7918E58322AFDA420065576A /* Trojan-XUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7918E58422AFDA420065576A /* Trojan_XUITests.swift */,
+				7918E58622AFDA420065576A /* Info.plist */,
+			);
+			path = "Trojan-XUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7918E56422AFDA410065576A /* Trojan-X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7918E58922AFDA420065576A /* Build configuration list for PBXNativeTarget "Trojan-X" */;
+			buildPhases = (
+				7918E56122AFDA410065576A /* Sources */,
+				7918E56222AFDA410065576A /* Frameworks */,
+				7918E56322AFDA410065576A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trojan-X";
+			productName = "Trojan-X";
+			productReference = 7918E56522AFDA410065576A /* Trojan-X.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7918E57422AFDA420065576A /* Trojan-XTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7918E58C22AFDA420065576A /* Build configuration list for PBXNativeTarget "Trojan-XTests" */;
+			buildPhases = (
+				7918E57122AFDA420065576A /* Sources */,
+				7918E57222AFDA420065576A /* Frameworks */,
+				7918E57322AFDA420065576A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7918E57722AFDA420065576A /* PBXTargetDependency */,
+			);
+			name = "Trojan-XTests";
+			productName = "Trojan-XTests";
+			productReference = 7918E57522AFDA420065576A /* Trojan-XTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7918E57F22AFDA420065576A /* Trojan-XUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7918E58F22AFDA420065576A /* Build configuration list for PBXNativeTarget "Trojan-XUITests" */;
+			buildPhases = (
+				7918E57C22AFDA420065576A /* Sources */,
+				7918E57D22AFDA420065576A /* Frameworks */,
+				7918E57E22AFDA420065576A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7918E58222AFDA420065576A /* PBXTargetDependency */,
+			);
+			name = "Trojan-XUITests";
+			productName = "Trojan-XUITests";
+			productReference = 7918E58022AFDA420065576A /* Trojan-XUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7918E55D22AFDA410065576A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Richard;
+				TargetAttributes = {
+					7918E56422AFDA410065576A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					7918E57422AFDA420065576A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7918E56422AFDA410065576A;
+					};
+					7918E57F22AFDA420065576A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7918E56422AFDA410065576A;
+					};
+				};
+			};
+			buildConfigurationList = 7918E56022AFDA410065576A /* Build configuration list for PBXProject "Trojan-X" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7918E55C22AFDA410065576A;
+			productRefGroup = 7918E56622AFDA410065576A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7918E56422AFDA410065576A /* Trojan-X */,
+				7918E57422AFDA420065576A /* Trojan-XTests */,
+				7918E57F22AFDA420065576A /* Trojan-XUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7918E56322AFDA410065576A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7918E56B22AFDA410065576A /* Assets.xcassets in Resources */,
+				7918E56E22AFDA410065576A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7918E57322AFDA420065576A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7918E57E22AFDA420065576A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7918E56122AFDA410065576A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7918E56922AFDA410065576A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7918E57122AFDA420065576A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7918E57A22AFDA420065576A /* Trojan_XTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7918E57C22AFDA420065576A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7918E58522AFDA420065576A /* Trojan_XUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7918E57722AFDA420065576A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7918E56422AFDA410065576A /* Trojan-X */;
+			targetProxy = 7918E57622AFDA420065576A /* PBXContainerItemProxy */;
+		};
+		7918E58222AFDA420065576A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7918E56422AFDA410065576A /* Trojan-X */;
+			targetProxy = 7918E58122AFDA420065576A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7918E56C22AFDA410065576A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7918E56D22AFDA410065576A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7918E58722AFDA420065576A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7918E58822AFDA420065576A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7918E58A22AFDA420065576A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Trojan-X/Trojan_X.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J6ANCADM7N;
+				INFOPLIST_FILE = "Trojan-X/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcdy.Trojan-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7918E58B22AFDA420065576A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Trojan-X/Trojan_X.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J6ANCADM7N;
+				INFOPLIST_FILE = "Trojan-X/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcdy.Trojan-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7918E58D22AFDA420065576A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J6ANCADM7N;
+				INFOPLIST_FILE = "Trojan-XTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcdy.Trojan-XTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trojan-X.app/Contents/MacOS/Trojan-X";
+			};
+			name = Debug;
+		};
+		7918E58E22AFDA420065576A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J6ANCADM7N;
+				INFOPLIST_FILE = "Trojan-XTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcdy.Trojan-XTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trojan-X.app/Contents/MacOS/Trojan-X";
+			};
+			name = Release;
+		};
+		7918E59022AFDA420065576A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J6ANCADM7N;
+				INFOPLIST_FILE = "Trojan-XUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcdy.Trojan-XUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Trojan-X";
+			};
+			name = Debug;
+		};
+		7918E59122AFDA420065576A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J6ANCADM7N;
+				INFOPLIST_FILE = "Trojan-XUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcdy.Trojan-XUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Trojan-X";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7918E56022AFDA410065576A /* Build configuration list for PBXProject "Trojan-X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7918E58722AFDA420065576A /* Debug */,
+				7918E58822AFDA420065576A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7918E58922AFDA420065576A /* Build configuration list for PBXNativeTarget "Trojan-X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7918E58A22AFDA420065576A /* Debug */,
+				7918E58B22AFDA420065576A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7918E58C22AFDA420065576A /* Build configuration list for PBXNativeTarget "Trojan-XTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7918E58D22AFDA420065576A /* Debug */,
+				7918E58E22AFDA420065576A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7918E58F22AFDA420065576A /* Build configuration list for PBXNativeTarget "Trojan-XUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7918E59022AFDA420065576A /* Debug */,
+				7918E59122AFDA420065576A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7918E55D22AFDA410065576A /* Project object */;
+}
