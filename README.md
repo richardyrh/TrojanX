@@ -1,10 +1,10 @@
 # TrojanX
 
-##What is TrojanX?
+## What is TrojanX?
 
 TrojanX is a bare-bones, minimal GUI client on Mac for Trojan, written in Swift and shell.
 
-##Quick Start Guide
+## Quick Start Guide
 
 1. Download a precompiled version of the app from the release tab and drag it to your Applications folder.
 
@@ -17,7 +17,7 @@ TrojanX is a bare-bones, minimal GUI client on Mac for Trojan, written in Swift 
 7. Relaunch the app, and you should now see your newly added configuration selected in the drop down menu from the status bar icon.
 8. Click `Start Trojan` and you're set!
 
-##Updating the Trojan Binary
+## Updating the Trojan Binary
 
 In order to update the trojan binary, download the latest version from the [trojan GitHub page](https://github.com/trojan-gfw/trojan) for your platform and replace the bundled binary located one level above the configuration folder (the Resources folder inside the app). 
 
