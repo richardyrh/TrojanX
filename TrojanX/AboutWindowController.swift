@@ -16,6 +16,8 @@ class AboutWindowController: NSWindowController {
 
     override func windowDidLoad() {
         super.windowDidLoad()
+        self.window?.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
     }
     
     @IBAction func openSettings(_ sender: Any) {
