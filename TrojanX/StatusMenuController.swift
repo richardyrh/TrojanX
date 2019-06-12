@@ -75,11 +75,13 @@ class StatusMenuController: NSObject {
     
     @IBAction func toggleClicked(_ sender: Any) {
         if (toggleItem.title.starts(with: "Start")) {
-            toggleItem.title = "Stop Trojan"
-            statusItem.button!.image = enabledIcon
-            do {
-                try Process.run(URL(fileURLWithPath: "/bin/bash"), arguments: [resourcePath + "/start.sh", configNames[currentConfig]!])
-            } catch {}
+            if (configNames[currentConfig] != nil) {
+                toggleItem.title = "Stop Trojan"
+                statusItem.button!.image = enabledIcon
+                do {
+                    try Process.run(URL(fileURLWithPath: "/bin/bash"), arguments: [resourcePath + "/start.sh", configNames[currentConfig]!])
+                } catch {}
+            }
         } else {
             toggleItem.title = "Start Trojan"
             statusItem.button!.image = disabledIcon
