@@ -31,7 +31,7 @@ In the future I would probably want to automate this, but for now this will do.
 
 ## Where's the option for local port?
 
-TrojanX uses regex magic to detect which port you specified in the config file, so as long as you file isn't too funky, system proxy will be automatically set up at the correct port.
+TrojanX uses regex magic to detect which port you specified in the config file, so as long as your file isn't too funky, system proxy will be automatically set up at the correct port.
 
 ## Some Notes
 
