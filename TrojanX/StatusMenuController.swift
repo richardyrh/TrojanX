@@ -17,6 +17,7 @@ class StatusMenuController: NSObject {
     
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     var aboutWindow: AboutWindowController!
+    var modifiersPressed = false
     
     let resourcePath = Bundle.main.resourceURL!.path
     
@@ -28,6 +29,17 @@ class StatusMenuController: NSObject {
         statusItem.button!.image = disabledIcon
         aboutWindow = AboutWindowController()
         statusMenu.autoenablesItems = false
+        
+        NSEvent.addGlobalMonitorForEvents(matching: [.flagsChanged, .keyDown]) {
+            if ($0.modifierFlags.intersection(.deviceIndependentFlagsMask) == [.control, .shift]) {
+                if ($0.keyCode == 17) {
+                    // ctrl + shift + T
+                    print("Toggle state")
+                    self.toggleClicked(self)
+                }
+            }
+        }
+        
         
         do {
             let configPaths = try FileManager.default.contentsOfDirectory(atPath: resourcePath + "/conf/")
