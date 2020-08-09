@@ -12,7 +12,7 @@ TrojanX is a bare-bones, minimal GUI client on Mac for Trojan, written in Swift 
 3. Click on the menu bar icon, and select "About..." from the dropdown menu. A window should open up.
 4. Click "Open configuration folder".
 5. Put your configuration files, certificates, etc. for trojan insde the opened directory. For the app to recognize a file as a piece of configuration to pipe into trojan, make sure they end in `.json`. Use a descriptive name like `"Tokyo Server.json"`.
-   - Side note: all file paths inside the configuration file should be relative to trojan executable, which is located in the parent directory of the configuration folder. This means that if you placed a certificate like `cert.pem` inside the configuration folder, you'll need to refer to it as `conf/cert.pem` inside the JSON.
+   - Side note: all file paths are relative to the configuration folder.
 6. If you are not using Wi-Fi as your primary network interface name, perform the steps in the guide [here](#if-you-are-not-using-wi-fi), otherwise skip this step.
 7. Relaunch the app, and you should now see your newly added configuration selected in the drop down menu from the status bar icon.
 8. Click `Start Trojan` or use shortcut <kbd>control</kbd> + <kbd>shift</kbd> + <kbd>T</kbd> to start Trojan. You're all set!
