@@ -13,11 +13,11 @@
 		7918E57A22AFDA420065576A /* TrojanXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7918E57922AFDA420065576A /* TrojanXTests.swift */; };
 		7918E58522AFDA420065576A /* TrojanXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7918E58422AFDA420065576A /* TrojanXUITests.swift */; };
 		7918E59322AFE2F40065576A /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7918E59222AFE2F40065576A /* StatusMenuController.swift */; };
+		79B3721824E0436400763DA5 /* trojan in Resources */ = {isa = PBXBuildFile; fileRef = 79B3721724E0436400763DA5 /* trojan */; };
 		79BF354822B0D8430058E01D /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BF354722B0D8430058E01D /* AboutWindow.xib */; };
 		79BF354C22B0DE0A0058E01D /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF354B22B0DE0A0058E01D /* AboutWindowController.swift */; };
 		79E24EAE22B0B1B10012C271 /* start.sh in Resources */ = {isa = PBXBuildFile; fileRef = 7918E59722AFFC0A0065576A /* start.sh */; };
 		79E24EAF22B0B1B10012C271 /* stop.sh in Resources */ = {isa = PBXBuildFile; fileRef = 7918E59822AFFC0A0065576A /* stop.sh */; };
-		79E24EB222B0B4E20012C271 /* trojan in Resources */ = {isa = PBXBuildFile; fileRef = 79E24EB122B0B4E20012C271 /* trojan */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,9 @@
 		7918E59222AFE2F40065576A /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		7918E59722AFFC0A0065576A /* start.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = start.sh; sourceTree = "<group>"; };
 		7918E59822AFFC0A0065576A /* stop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = stop.sh; sourceTree = "<group>"; };
+		79B3721724E0436400763DA5 /* trojan */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = trojan; path = ../../../../Downloads/trojan/trojan; sourceTree = "<group>"; };
 		79BF354722B0D8430058E01D /* AboutWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
 		79BF354B22B0DE0A0058E01D /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
-		79E24EB122B0B4E20012C271 /* trojan */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = trojan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		7918E55C22AFDA410065576A = {
 			isa = PBXGroup;
 			children = (
-				7918E59622AFFBBF0065576A /* trojan-bin */,
+				7918E59622AFFBBF0065576A /* bin */,
 				7918E56722AFDA410065576A /* TrojanX */,
 				7918E57822AFDA420065576A /* TrojanXTests */,
 				7918E58322AFDA420065576A /* TrojanXUITests */,
@@ -137,14 +137,14 @@
 			path = TrojanXUITests;
 			sourceTree = "<group>";
 		};
-		7918E59622AFFBBF0065576A /* trojan-bin */ = {
+		7918E59622AFFBBF0065576A /* bin */ = {
 			isa = PBXGroup;
 			children = (
-				79E24EB122B0B4E20012C271 /* trojan */,
+				79B3721724E0436400763DA5 /* trojan */,
 				7918E59722AFFC0A0065576A /* start.sh */,
 				7918E59822AFFC0A0065576A /* stop.sh */,
 			);
-			path = "trojan-bin";
+			path = bin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E24EB222B0B4E20012C271 /* trojan in Resources */,
+				79B3721824E0436400763DA5 /* trojan in Resources */,
 				79BF354822B0D8430058E01D /* AboutWindow.xib in Resources */,
 				79E24EAE22B0B1B10012C271 /* start.sh in Resources */,
 				79E24EAF22B0B1B10012C271 /* stop.sh in Resources */,
@@ -463,6 +463,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rcdy.TrojanX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -482,6 +483,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rcdy.TrojanX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

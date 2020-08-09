@@ -3,7 +3,7 @@
 //  TrojanX
 //
 //  Created by RCD-Y on 6/11/19.
-//  Copyright © 2019 RCD-Y. All rights reserved.
+//  Copyright © 2020 RCD-Y. All rights reserved.
 //
 
 import Cocoa
@@ -20,6 +20,7 @@ class StatusMenuController: NSObject {
     var modifiersPressed = false
     
     let resourcePath = Bundle.main.resourceURL!.path
+    let confPath = FileManager().homeDirectoryForCurrentUser.path + "/Library/TrojanX/"
     
     var configNames: [String: String] = [:]
     var currentConfig = ""
@@ -42,10 +43,10 @@ class StatusMenuController: NSObject {
         
         
         do {
-            let configPaths = try FileManager.default.contentsOfDirectory(atPath: resourcePath + "/conf/")
+            let configPaths = try FileManager.default.contentsOfDirectory(atPath: confPath)
             for path in configPaths {
                 if (path.hasSuffix(".json")) {
-                    configNames[String(path.prefix(upTo: path.lastIndex(of: ".")!))] = resourcePath + "/conf/" + path
+                    configNames[String(path.prefix(upTo: path.lastIndex(of: ".")!))] = path
                 }
             }
             if (configNames.count > 0) {
@@ -57,14 +58,12 @@ class StatusMenuController: NSObject {
                 }
                 statusMenu.item(at: 2)!.state = .on
                 currentConfig = statusMenu.item(at: 2)!.title
-            } else {
-                
             }
         } catch {
             print(error)
             do {
-                try FileManager.default.createDirectory(atPath: resourcePath + "/conf/", withIntermediateDirectories: true)
-                NSWorkspace.shared.openFile(resourcePath + "/conf/")
+                try FileManager.default.createDirectory(atPath: confPath, withIntermediateDirectories: true)
+                NSWorkspace.shared.openFile(confPath)
             } catch {}
         }
     }
@@ -91,7 +90,7 @@ class StatusMenuController: NSObject {
                 toggleItem.title = "Stop Trojan"
                 statusItem.button!.image = enabledIcon
                 do {
-                    try Process.run(URL(fileURLWithPath: "/bin/bash"), arguments: [resourcePath + "/start.sh", configNames[currentConfig]!])
+                    try Process.run(URL(fileURLWithPath: "/bin/bash"), arguments: [resourcePath + "/start.sh", confPath, configNames[currentConfig]!])
                 } catch {}
             }
         } else {

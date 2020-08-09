@@ -21,6 +21,6 @@ class AboutWindowController: NSWindowController {
     }
     
     @IBAction func openSettings(_ sender: Any) {
-        NSWorkspace.shared.openFile(Bundle.main.resourceURL!.path + "/conf/")
+        NSWorkspace.shared.openFile(FileManager().homeDirectoryForCurrentUser.path + "/Library/TrojanX/")
     }
 }
